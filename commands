@@ -1,0 +1,17 @@
+------------------- RabbitMQ commands -----------------------
+
+sudo systemctl start rabbitmq-server
+systemctl status rabbitmq-server
+sudo rabbitmqctl stop
+
+-------------------------------------------------------------
+
+celery -A project worker -l info
+celery -A project beat -l INFO
+celery -A project beat -l INFO --scheduler django_delery_beat.schedulers:DatabaseScheduler
+celery -A project flower --port=5555
+
+-------------------------------------------------------------
+
+
+
