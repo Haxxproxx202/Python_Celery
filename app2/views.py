@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from app2.forms import ReviewForm
 from django.views.generic.edit import FormView
 from django.http import HttpResponse
@@ -12,4 +11,3 @@ class ReviewEmailView(FormView):
         form.send_email()
         msg = "Thanks for the review!"
         return HttpResponse(msg)
-

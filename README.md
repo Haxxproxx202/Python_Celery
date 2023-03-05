@@ -4,4 +4,6 @@ What I learn here is:
 
 * Python Celery library
 * RabbitMQ
-* Expanding knowledge with Django
+* Scheduling and monitoring tasks with Django, Celery, Beat and Flower
+* Django Celery-Results-Backend package
+* Django Cache framework
